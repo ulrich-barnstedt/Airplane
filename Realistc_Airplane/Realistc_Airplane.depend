@@ -1,0 +1,160 @@
+# depslib dependency file v1.0
+1616195216 source:d:\code_blocks\workspace\realistc_airplane\airplaneconfig.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"AirplaneConfig.h"
+	"Turbine.h"
+	"Gears.h"
+	"Wings.h"
+	"Rudder.h"
+
+1616195200 d:\code_blocks\workspace\realistc_airplane\airplaneconfig.h
+
+1616192687 d:\code_blocks\workspace\realistc_airplane\turbine.h
+
+1616193738 d:\code_blocks\workspace\realistc_airplane\gears.h
+
+1616194260 d:\code_blocks\workspace\realistc_airplane\wings.h
+
+1616194957 d:\code_blocks\workspace\realistc_airplane\rudder.h
+
+1616194367 source:d:\code_blocks\workspace\realistc_airplane\gears.c
+	<stdio.h>
+	<stdlib.h>
+	"Gears.h"
+
+1616195295 source:d:\code_blocks\workspace\realistc_airplane\rudder.c
+	<stdio.h>
+	<stdlib.h>
+	"Rudder.h"
+
+1616193979 source:d:\code_blocks\workspace\realistc_airplane\turbine.c
+	<stdio.h>
+	<stdlib.h>
+	"Turbine.h"
+
+1616194453 source:d:\code_blocks\workspace\realistc_airplane\wings.c
+	<stdio.h>
+	<stdlib.h>
+	"Wings.h"
+
+1616195270 source:d:\code_blocks\workspace\realistc_airplane\airplane.c
+	<stdio.h>
+	<stdlib.h>
+	"Airplane.h"
+	"Turbine.h"
+	"Gears.h"
+	"AirplaneConfig.h"
+	"Wings.h"
+	"Rudder.h"
+
+1616190529 d:\code_blocks\workspace\realistc_airplane\airplane.h
+
+1616194726 source:d:\code_blocks\workspace\realistc_airplane\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Airplane.h"
+	"Turbine.h"
+	"Gears.h"
+	"Wings.h"
+	"Rudder.h"
+	"AirplaneConfig.h"
+
+1616192110 source:d:\code_blocks\workspace\realistc_airplane\fuel.c
+	<stdio.h>
+	<stdlib.h>
+	"Fuel.h"
+
+1616192080 d:\code_blocks\workspace\realistc_airplane\fuel.h
+
+1616251639 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\airplane.c
+	<stdio.h>
+	<stdlib.h>
+	"Airplane.h"
+	"Turbine.h"
+	"Gears.h"
+	"AirplaneConfig.h"
+	"Wings.h"
+	"Rudder.h"
+	"Luftwiderstand.h"
+
+1616250905 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\airplane.h
+	"AirplaneConfig.h"
+	"Turbine.h"
+	"Gears.h"
+	"Wings.h"
+	"Rudder.h"
+	"Luftwiderstand.h"
+
+1616250245 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\turbine.h
+
+1616250245 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\gears.h
+
+1616251639 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\airplaneconfig.h
+
+1616250245 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\wings.h
+
+1616250245 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\rudder.h
+
+1616251639 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\airplaneconfig.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"AirplaneConfig.h"
+	"Turbine.h"
+	"Gears.h"
+	"Wings.h"
+	"Rudder.h"
+	"Luftwiderstand.h"
+
+1616250245 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\fuel.c
+	<stdio.h>
+	<stdlib.h>
+	"Fuel.h"
+
+1616250245 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\fuel.h
+
+1616250245 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\gears.c
+	<stdio.h>
+	<stdlib.h>
+	"Gears.h"
+
+1616250554 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Airplane.h"
+	"Turbine.h"
+	"Gears.h"
+	"Wings.h"
+	"Rudder.h"
+	"AirplaneConfig.h"
+	"Luftwiderstand.h"
+
+1616250245 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\rudder.c
+	<stdio.h>
+	<stdlib.h>
+	"Rudder.h"
+
+1616250245 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\turbine.c
+	<stdio.h>
+	<stdlib.h>
+	"Turbine.h"
+
+1616250245 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\wings.c
+	<stdio.h>
+	<stdlib.h>
+	"Wings.h"
+
+1616251639 c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\luftwiderstand.h
+	"AirplaneConfig.h"
+	"Turbine.h"
+	"Gears.h"
+	"Wings.h"
+	"Rudder.h"
+
+1616251650 source:c:\users\kilia\desktop\projekte\flugzeug\realistc_airplane\luftwiderstand.c
+	<stdio.h>
+	<stdlib.h>
+	"Luftwiderstand.h"
+
