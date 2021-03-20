@@ -12,7 +12,7 @@ int main(){
 
     PConfig config = Config_create(0.3, 42, 4, 1, 3, 2, 1, "A 320 Neo");
 
-    PAirplane airplane = Airplane_create(config);
+    PAirplane airplane = Airplane_create(config);//Working
 
     Airplane_Debug_printAllData(airplane);
 }
