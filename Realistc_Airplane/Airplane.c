@@ -7,7 +7,11 @@
 #include "Wings.h"
 #include "Rudder.h"
 #include "Luftwiderstand.h"
+<<<<<<< HEAD
 #include "Light.h"
+=======
+#include "Input.h"
+>>>>>>> 57d484108901312ae9b83cea34d133340ed6369d
 
 typedef int boolean;
 
@@ -27,7 +31,6 @@ struct Airplane{
 };
 
 float converterKn(float velocity){
-
     return (velocity / 1.852);
 }
 float convertKmh(float velocity){
@@ -65,7 +68,6 @@ void Airplane_removeThrust(PAirplane _this){
 
     }
     _this->thrust -= Config_getThrustAddValue(_this->conf);
-
 }
 void Airplane_Debug_printAllData(PAirplane _this){
 
