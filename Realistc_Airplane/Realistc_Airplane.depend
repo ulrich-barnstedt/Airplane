@@ -158,7 +158,7 @@
 	<stdlib.h>
 	"Luftwiderstand.h"
 
-1616399356 source:c:\users\user\documents\github\airplane\realistc_airplane\airplane.c
+1616400822 source:c:\users\user\documents\github\airplane\realistc_airplane\airplane.c
 	<stdio.h>
 	<stdlib.h>
 	"Airplane.h"
@@ -168,6 +168,8 @@
 	"Wings.h"
 	"Rudder.h"
 	"Luftwiderstand.h"
+	"Light.h"
+	"Input.h"
 
 1616399181 c:\users\user\documents\github\airplane\realistc_airplane\airplane.h
 	"AirplaneConfig.h"
@@ -236,7 +238,7 @@
 	"Rudder.h"
 	"AirplaneConfig.h"
 
-1616399619 source:c:\users\user\documents\github\airplane\realistc_airplane\airplaneconfig.c
+1616399688 source:c:\users\user\documents\github\airplane\realistc_airplane\airplaneconfig.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -245,6 +247,10 @@
 	"Gears.h"
 	"Wings.h"
 	"Rudder.h"
+
+1616399688 D
+
+1616400481 c:\users\user\documents\github\airplane\realistc_airplane\light.h
 
 1616400353 source:c:\users\kilia\documents\github\airplane\realistc_airplane\airplane.c
 	<stdio.h>
@@ -342,4 +348,13 @@
 	"Input.h"
 	<stdio.h>
 	<stdlib.h>
+
+1616400371 484108901312ae9b83cea34d133340ed6369d
+
+1616400822 c:\users\user\documents\github\airplane\realistc_airplane\input.h
+
+1616400741 source:c:\users\user\documents\github\airplane\realistc_airplane\light.c
+	<stdlib.h>
+	<stdio.h>
+	"Light.h"
 
