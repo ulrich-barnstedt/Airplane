@@ -6,7 +6,6 @@
 #include "Gears.h"
 #include "Wings.h"
 #include "Rudder.h"
-#include "Luftwiderstand.h"
 
 #define MAX_STRING 31
 
@@ -18,21 +17,26 @@ struct Config{
 
     boolean gearsUp;
     float weight;
+    float length;
+    float span;
 
+    float hullDiameter;
     int wingsCount;
     int rudderCount;
     int gearsCount;
     int turbineCount;
-    float cwValue;
 
     int thrustAddValue;
 };
 
-PConfig Config_create(float cw, float weight, int wingsCount, int rudderCount, int gearsCount, int turbineCount, int thrustAddVlue, char* callSign){
+PConfig Config_create(float weight, int wingsCount, int rudderCount, int gearsCount, int turbineCount, int thrustAddVlue, char* callSign, float span, float hullDiameter, float length){
 
     PConfig retVal = (PConfig) malloc(sizeof(struct Config));
 
     strcpy(retVal->callSign, callSign);
+    retVal->length = length;
+    retVal->hullDiameter = hullDiameter;
+    retVal->span = span;
     retVal->gearsCount = gearsCount;
     retVal->gearsUp = 0;
     retVal->rudderCount = rudderCount;
@@ -40,7 +44,6 @@ PConfig Config_create(float cw, float weight, int wingsCount, int rudderCount, i
     retVal->turbineCount = turbineCount;
     retVal->weight = weight;
     retVal->wingsCount = wingsCount;
-    retVal->cwValue = cw;
 
     return retVal;
 }
@@ -55,7 +58,9 @@ void Config_print(PConfig _this){
     printf("   GearsCount: %d\n", _this->gearsCount);
     printf("   TurbineCount: %d\n", _this->turbineCount);
     printf("   ThrustAddValue: %d\n", _this->thrustAddValue);
-    printf("   CW-Value: %.1f\n", _this->cwValue);
+    printf("   HullDiameter: %.2f\n", _this->hullDiameter);
+    printf("   Length: %.2f\n", _this->length);
+    printf("   Span: %.2f\n", _this->span);
     printf("}\n");
 }
 
@@ -81,7 +86,11 @@ int Config_getTurbineCount(PConfig _this){
 int Config_getRudderCount(PConfig _this){
     return _this->rudderCount;
 }
+int Config_getSpan(PConfig _this){
 
-float Config_getCWValue(PConfig _this) {
-    return _this->cwValue;
+    return _this->span;
+}
+int Config_getHullDiameter(PConfig _this){
+
+    return _this->hullDiameter;
 }
