@@ -252,7 +252,7 @@
 
 1616400481 c:\users\user\documents\github\airplane\realistc_airplane\light.h
 
-1616404243 source:c:\users\kilia\documents\github\airplane\realistc_airplane\airplane.c
+1616404600 source:c:\users\kilia\documents\github\airplane\realistc_airplane\airplane.c
 	<stdio.h>
 	<stdlib.h>
 	"Airplane.h"
@@ -317,7 +317,7 @@
 	<stdlib.h>
 	"Luftwiderstand.h"
 
-1616404185 source:c:\users\kilia\documents\github\airplane\realistc_airplane\main.c
+1616404766 source:c:\users\kilia\documents\github\airplane\realistc_airplane\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Airplane.h"

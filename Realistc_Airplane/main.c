@@ -17,7 +17,7 @@ int main(){
 
     PAirplane airplane = Airplane_create(config);
 
-    Airplane_update(airplane);
+    Airplane_update(airplane);  //calling the update function (later this must be a loop)
 
     Airplane_Debug_printAllData(airplane);
 }

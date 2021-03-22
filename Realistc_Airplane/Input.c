@@ -12,7 +12,7 @@ PInput Input_createInstance() {
     PInput in = (PInput)malloc(sizeof(struct Input));
 
     if (in) {
-        in->choice = '0';
+        in->choice = '0'; //default value (used for debugging, not really needed)
         in->lastChoice = in->choice;
     }else {
         printf("Error occured while allocation. (Input)\n");
@@ -22,7 +22,7 @@ PInput Input_createInstance() {
 }
 
 void Input_UserInput(PInput _this) {
-    if(kbhit()) {
+    if(kbhit()) {   //if the keyboard is hit, the user gets an input, it keyboard is not hit, the last choice is used
         _this->choice = getch();
         _this->lastChoice = _this->choice;
     }
@@ -45,7 +45,7 @@ void Input_callFunctionNeeded(PInput _this, PAirplane _that) {
                   Airplane_removeThrust(_that);
                   break;
 
-        default:  printf("DEFAULT!\n");
+        default:
                   break;
     }
 }

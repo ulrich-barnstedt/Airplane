@@ -11,7 +11,7 @@
 
 typedef int boolean;
 
-struct Config{
+struct Config { //basic configuration of the current airplane, can be modified as needed, the functions are fully adaptable
 
     char callSign[MAX_STRING];
 
@@ -51,11 +51,9 @@ PConfig Config_create(float weight, int wingsCount, int rudderCount, int gearsCo
     return retVal;
 }
 void Config_print(PConfig _this){
-
     printf("Config %s{\n", _this->callSign);
     printf("   GearsUp: %d\n   GearsCount: %d\n\n", _this->gearsUp, _this->gearsCount);
     printf("   Weight: %.2ft\n", _this->weight);
-
     printf("   WingsCount: %d\n", _this->wingsCount);
     printf("   RudderCount: %d\n", _this->rudderCount);
     printf("   GearsCount: %d\n", _this->gearsCount);
@@ -69,35 +67,37 @@ void Config_print(PConfig _this){
 }
 
 int Config_getThrustAddValue(PConfig _this){
-
     return _this->thrustAddValue;
 }
-void Config_setThrustAddValue(PConfig _this, int value){
 
+void Config_setThrustAddValue(PConfig _this, int value){
     _this->thrustAddValue = value;
 }
-int Config_getWingsCount(PConfig _this){
 
+int Config_getWingsCount(PConfig _this){
     return _this->wingsCount;
 }
-int Config_getGearsCount(PConfig _this){
 
+int Config_getGearsCount(PConfig _this){
     return _this->gearsCount;
 }
+
 int Config_getTurbineCount(PConfig _this){
     return _this->turbineCount;
 }
+
 int Config_getRudderCount(PConfig _this){
     return _this->rudderCount;
 }
-int Config_getSpan(PConfig _this){
 
+int Config_getSpan(PConfig _this){
     return _this->span;
 }
-int Config_getHullDiameter(PConfig _this){
 
+int Config_getHullDiameter(PConfig _this){
     return _this->hullDiameter;
 }
+
 int Config_getCWValue(PConfig _this){
     return _this->cw;
 }
