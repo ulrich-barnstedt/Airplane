@@ -335,9 +335,10 @@
 	<stdlib.h>
 	"Wings.h"
 
-1616400103 c:\users\kilia\documents\github\airplane\realistc_airplane\input.h
+1616401040 c:\users\kilia\documents\github\airplane\realistc_airplane\input.h
+	"Airplane.h"
 
-1616400371 source:c:\users\kilia\documents\github\airplane\realistc_airplane\input.c
+1616400672 source:c:\users\kilia\documents\github\airplane\realistc_airplane\input.c
 	"Input.h"
 	<stdio.h>
 	<stdlib.h>
