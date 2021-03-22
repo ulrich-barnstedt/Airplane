@@ -77,7 +77,6 @@ void Airplane_Debug_printAllData(PAirplane _this){
     Rudder_printArr(_this->rudderArr, Config_getRudderCount(_this->conf));
     Lights_print(_this->lights);
     Luftwiderstand_print(_this->widerstand);
-    Input_print(_this->input);
     printf("Thrust: %.2f\n", _this->thrust);
 }
 
