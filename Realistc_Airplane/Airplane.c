@@ -7,11 +7,8 @@
 #include "Wings.h"
 #include "Rudder.h"
 #include "Luftwiderstand.h"
-<<<<<<< HEAD
 #include "Light.h"
-=======
 #include "Input.h"
->>>>>>> 57d484108901312ae9b83cea34d133340ed6369d
 
 typedef int boolean;
 
@@ -25,6 +22,7 @@ struct Airplane{
     PGearsArr gearsArr;
     PLuftwiderstand widerstand;
     PLights lights;
+    PInput input;
 
     float velocity; //KN
     float thrust;
@@ -49,6 +47,7 @@ PAirplane Airplane_create(PConfig conf){
     retVal->lights = Lights_create();
     retVal->thrust = 0;
     retVal->velocity = 0;
+    retVal->input = Input_createInstance();
 
     return retVal;
 }
@@ -82,6 +81,5 @@ void Airplane_Debug_printAllData(PAirplane _this){
 }
 
 void Airplane_update(PAirplane _this){
-
-
+    Input_callFunctionNeeded(_this->input, _this);
 }

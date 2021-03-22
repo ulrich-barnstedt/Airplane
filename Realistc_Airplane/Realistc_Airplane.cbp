@@ -47,6 +47,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Gears.h" />
+		<Unit filename="Input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Input.h" />
 		<Unit filename="Luftwiderstand.c">
 			<Option compilerVar="CC" />
 		</Unit>

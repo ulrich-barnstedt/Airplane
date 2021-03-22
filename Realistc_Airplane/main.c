@@ -6,6 +6,10 @@
 #include "Wings.h"
 #include "Rudder.h"
 #include "AirplaneConfig.h"
+#include "Input.h"
+#include "Light.h"
+#include "Fuel.h"
+#include "Luftwiderstand.h"
 
 int main(){
 
@@ -13,6 +17,7 @@ int main(){
 
     PAirplane airplane = Airplane_create(config);
 
-    Airplane_Debug_printAllData(airplane);
+    Airplane_update(airplane);
 
+    Airplane_Debug_printAllData(airplane);
 }
