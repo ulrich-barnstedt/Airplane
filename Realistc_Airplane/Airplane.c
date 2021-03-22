@@ -7,6 +7,7 @@
 #include "Wings.h"
 #include "Rudder.h"
 #include "Luftwiderstand.h"
+#include "Light.h"
 
 typedef int boolean;
 
@@ -19,6 +20,7 @@ struct Airplane{
     PTurbineArr turbineArr;
     PGearsArr gearsArr;
     PLuftwiderstand widerstand;
+    PLights lights;
 
     float velocity; //KN
     float thrust;
@@ -41,6 +43,7 @@ PAirplane Airplane_create(PConfig conf){
     retVal->wingArr = Wings_createArr(Config_getWingsCount(retVal->conf));
     retVal->rudderArr = Rudder_createArr(Config_getRudderCount(retVal->conf));
     retVal->widerstand = Luftwiderstand_berechneKraft(Config_getCWValue(retVal->conf));
+    retVal->lights = Lights_create();
     retVal->thrust = 0;
     retVal->velocity = 0;
 
@@ -71,6 +74,7 @@ void Airplane_Debug_printAllData(PAirplane _this){
     Gears_printArr(_this->gearsArr, Config_getGearsCount(_this->conf));
     Wings_printArr(_this->wingArr, Config_getWingsCount(_this->conf));
     Rudder_printArr(_this->rudderArr, Config_getRudderCount(_this->conf));
+    Lights_print(_this->lights);
     Luftwiderstand_print(_this->widerstand);
     printf("Thrust: %.2f\n", _this->thrust);
 }
