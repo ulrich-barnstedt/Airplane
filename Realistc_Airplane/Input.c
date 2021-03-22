@@ -1,6 +1,7 @@
 #include "Input.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 struct Input {
     char choice;
@@ -20,12 +21,11 @@ PInput Input_createInstance() {
     return in;
 }
 
-void Input_getUserInput(PInput _this) {
-    do {
-        printf("Insert ch [a] adding throttle, [s] substracting it.\n");
-        fflush(stdin);
-        scanf("%c", &(_this->choice));
-    }while (Input_checkUserInput(_this));
+void Input_UserInput(PInput _this) {
+    if(kbhit()) {
+        _this->choice = getch();
+        _this->lastChoice = _this->choice;
+    }
 }
 
 int Input_checkUserInput(PInput _this) {
@@ -33,18 +33,28 @@ int Input_checkUserInput(PInput _this) {
 }
 
 void Input_callFunctionNeeded(PInput _this, PAirplane _that) {
-    Input_getUserInput(_this);
+    Input_UserInput(_this);
 
     switch(_this->choice) {
-        case 'a': printf("ADD!\n");
+        case 'a':
                   Airplane_addThrust(_that);
                   break;
 
-        case 's': printf("SUB!\n");
+        case 's':
                   Airplane_removeThrust(_that);
                   break;
 
         default:  printf("DEFAULT!\n");
                   break;
     }
+}
+
+char Input_getter(PInput _this) {
+    return (_this->choice);
+}
+
+void Input_print(PInput _this) {
+    printf("Input {\n");
+    printf("  User Choice: %c\n", Input_getter(_this));
+    printf("}\n");
 }
