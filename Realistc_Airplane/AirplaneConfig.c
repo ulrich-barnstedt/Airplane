@@ -20,6 +20,8 @@ struct Config{
     float length;
     float span;
 
+    float cw;
+
     float hullDiameter;
     int wingsCount;
     int rudderCount;
@@ -34,6 +36,7 @@ PConfig Config_create(float weight, int wingsCount, int rudderCount, int gearsCo
     PConfig retVal = (PConfig) malloc(sizeof(struct Config));
 
     strcpy(retVal->callSign, callSign);
+    retVal->cw = 0.3;
     retVal->length = length;
     retVal->hullDiameter = hullDiameter;
     retVal->span = span;
@@ -61,6 +64,7 @@ void Config_print(PConfig _this){
     printf("   HullDiameter: %.2f\n", _this->hullDiameter);
     printf("   Length: %.2f\n", _this->length);
     printf("   Span: %.2f\n", _this->span);
+    printf("   CW: %.2f\n", _this->cw);
     printf("}\n");
 }
 
@@ -93,4 +97,7 @@ int Config_getSpan(PConfig _this){
 int Config_getHullDiameter(PConfig _this){
 
     return _this->hullDiameter;
+}
+int Config_getCWValue(PConfig _this){
+    return _this->cw;
 }
